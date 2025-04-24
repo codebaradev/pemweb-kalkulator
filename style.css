@@ -1,0 +1,44 @@
+body {
+    font-family: montserrat;
+}
+.flex {
+    display: flex;
+}
+.angka {
+    margin: 0.2rem;
+    padding: 1rem;
+    background-color: #FBF8DD;
+    border-radius: 10px;
+    font-size: 14pt;
+    font-weight: bold;
+}
+.angka:hover {
+    background-color: #E9C874;
+}
+.operator {
+    background-color: #A34343;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0.2rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.operator:hover {
+    background-color: #F2613F;
+}
+.nilai, #hasil {
+    width: 10rem;
+    padding: 1rem;
+    font-size: 12px;
+}
+#hasil {
+    text-align: right;
+    font-weight: 600;
+}
+.container {
+    box-sizing: border-box;
+    width: fit-content;
+    height: fit-content;
+    margin: 3rem auto;
+}
