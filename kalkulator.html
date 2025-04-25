@@ -9,38 +9,46 @@
 </head>
 <body>
     <div class="container">
-        <input id="setnilai" class="nilai"/>
-        <div id="hasil"></div>
-        <div class="flex">
-            <div class="angka">1</div>
-            <div class="angka">2</div>
-            <div class="angka">3</div>
-            <div class="operator">
-                +
-            </div>
+        <div class="flex flex-col">
+            <input id="setnilai" class="nilai"/>
+            <div id="hasil"></div>
         </div>
-        <div class="flex">
-            <div class="angka" id="setAngka-4">4</div>
-            <div class="angka">5</div>
-            <div class="angka">6</div>
-            <div class="operator">
-                -
+        
+        <div>
+            <div class="flex numop-container">
+                <div class="angka">1</div>
+                <div class="angka">2</div>
+                <div class="angka">3</div>
+                <div class="operator">
+                    +
+                </div>
             </div>
-        </div>
-        <div class="flex">
-            <div class="angka">7</div>
-            <div class="angka">8</div>
-            <div class="angka">9</div>
-            <div class="operator">
-                *
+            
+            <div class="flex numop-container">
+                <div class="angka" id="setAngka-4">4</div>
+                <div class="angka">5</div>
+                <div class="angka">6</div>
+                <div class="operator">
+                    -
+                </div>
             </div>
-        </div>
-        <div class="flex">
-            <div class="angka"> . </div>
-            <div class="angka">0</div>
-            <div class="operator"> = </div>
-            <div class="operator">
-                /
+    
+            <div class="flex numop-container">
+                <div class="angka">7</div>
+                <div class="angka">8</div>
+                <div class="angka">9</div>
+                <div class="operator">
+                    *
+                </div>
+            </div>
+    
+            <div class="flex numop-container">
+                <div class="angka"> . </div>
+                <div class="angka">0</div>
+                <div class="operator"> = </div>
+                <div class="operator">
+                    /
+                </div>
             </div>
         </div>
     </div>

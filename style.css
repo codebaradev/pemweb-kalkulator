@@ -1,44 +1,98 @@
-body {
-    font-family: montserrat;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    background-color: #f5f3ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(168, 85, 247, 0.1);
+    width: 320px;
+}
+
+#setnilai {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
 .flex {
     display: flex;
 }
+
+.flex-col {
+    flex-direction: column;
+}
+
+.numop-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
 .angka {
-    margin: 0.2rem;
-    padding: 1rem;
-    background-color: #FBF8DD;
-    border-radius: 10px;
-    font-size: 14pt;
-    font-weight: bold;
-}
-.angka:hover {
-    background-color: #E9C874;
-}
-.operator {
-    background-color: #A34343;
-    color: #FFF;
+    padding: 1.2rem;
+    background-color: #f3e8ff;
+    border-radius: 12px;
     font-size: 16px;
+    font-weight: 600;
+    color: #6b21a8;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    flex: 1;
+    text-align: center;
+}
+
+.angka:hover {
+    background-color: #e9d5ff;
+    transform: translateY(-2px);
+}
+
+.operator {
+    background-color: #8b5cf6;
+    color: #fff;
+    font-size: 18px;
     font-weight: 700;
-    margin: 0.2rem;
-    padding: 1rem;
-    border-radius: 10px;
+    padding: 1.2rem;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    flex: 1;
+    text-align: center;
 }
+
 .operator:hover {
-    background-color: #F2613F;
+    background-color: #7c3aed;
+    transform: translateY(-2px);
 }
+
 .nilai, #hasil {
-    width: 10rem;
-    padding: 1rem;
-    font-size: 12px;
+    padding: 1.2rem;
+    font-size: 14px;
+    background-color: #f8fafc;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    margin-bottom: 1rem;
 }
+
 #hasil {
     text-align: right;
     font-weight: 600;
-}
-.container {
-    box-sizing: border-box;
-    width: fit-content;
-    height: fit-content;
-    margin: 3rem auto;
+    font-size: 24px;
+    color: #6b21a8;
+    background-color: #f3e8ff;
+    border: none;
+    padding: 1.5rem;
 }
